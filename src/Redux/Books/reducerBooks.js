@@ -1,10 +1,12 @@
+import axios from 'axios';
+import { createAsyncThunk } from '@reduxjs/toolkit';
 const BASE_URL = 'https://the-dune-api.herokuapp.com/books/15';
 const GET_DUME_BOOK = 'GET_DUME_BOOK';
 const stateInit = [];
 
 const reducerDukeBooks = (state=stateInit, actions) => {
   switch(actions.type){
-    case GET_DUME_BOOK: return [...state, ...actions.payload]
+    case `${GET_DUME_BOOK}/fulfilled`: return [...state, ...actions.payload]
     default: return state;
   }
 }
