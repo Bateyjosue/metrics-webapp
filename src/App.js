@@ -1,6 +1,6 @@
 import './App.css';
 // import { Routes, Route, NavLink} from 'react-router-dom';
-import DuneBook from './Conponemts/Pages/duneBook';
+import DuneBook from './Components/Pages/duneBook';
 
 function App() {
   return (
