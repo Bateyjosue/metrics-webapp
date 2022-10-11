@@ -1,4 +1,6 @@
 import './App.css';
+// import { Routes, Route, NavLink} from 'react-router-dom';
+import DuneBook from './Conponemts/Pages/duneBook';
 
 function App() {
   return (
@@ -8,6 +10,9 @@ function App() {
           <h1>Metrics Apps</h1>
         </div>
       </header>
+      <main>
+        <DuneBook />
+      </main>
     </div>
   );
 }
