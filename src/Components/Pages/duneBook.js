@@ -17,7 +17,6 @@ export default function DuneBook() {
     const items = item.name.toLowerCase().includes(filter.toLowerCase());
     return items;
   });
-  console.log(filterBook);
   return (
     <>
       <div className="search">
