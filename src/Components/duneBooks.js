@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/require-default-props */
-
 import PropTypes from 'prop-types';
 
 const DuneBooks = ({ books }) => {
@@ -7,20 +7,22 @@ const DuneBooks = ({ books }) => {
     id, name, image, age, gender, wikiUrl,
   } = books;
   return (
-    <article>
-      <div className="card-image">
-        <img src={image} alt="" />
-      </div>
-      <div className="card-body">
-        <h4 className="card-title">{name}</h4>
-        <p>{age}</p>
-        <ul>
-          <li>{id}</li>
-          <li>{gender}</li>
-          <li>{wikiUrl}</li>
-        </ul>
-      </div>
-    </article>
+    <>
+      <article>
+        <div className="card-image">
+          <img src={image} alt="" />
+        </div>
+        <div className="card-body">
+          <h4 className="card-title">{name}</h4>
+          <p>{age}</p>
+          <ul>
+            <li>{id}</li>
+            <li>{gender}</li>
+            <li>{wikiUrl}</li>
+          </ul>
+        </div>
+      </article>
+    </>
   );
 };
 

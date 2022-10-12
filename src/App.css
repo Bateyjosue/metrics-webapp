@@ -1,5 +1,4 @@
-article {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }

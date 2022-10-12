@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
-const BASE_URL = 'https://bobsburgers-api.herokuapp.com/characters/?limit=20&skip=489';
+const BASE_URL = 'https://bobsburgers-api.herokuapp.com/characters/?limit=10&skip=489';
 const GET_DUME_BOOK = 'GET_DUME_BOOK';
 const stateInit = [];
 
