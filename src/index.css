@@ -22,9 +22,10 @@ body {
 }
 
 :root {
-  --primary-color: #3E699B;
-  --secondary-color:#357AC8;
+  --primary-color: #3e699bf3;
+  --secondary-color:#357ac8d0;
   --primary-white: #fff;
+  --primary-gray: rgba(85, 83, 83, 0.592);
 }
 
 code {
