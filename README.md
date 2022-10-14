@@ -3,10 +3,11 @@
 
 # #metrics-webapp
 
-> It's a mobile web application to check a list of metrics (numeric values)
+> It's a mobile web application to display the list of characters for the Bob's Gurger Anime show. Fetcher from the Bob's Burger API and Built using Reactjs, Redux, HTML/CSS, Axios
 
 
 # Sreenshot
+![](https://github.com/Bateyjosue/metrics-webapp/blob/dev/mockup.png)
 
 # Live Demo
 
@@ -14,7 +15,7 @@
 
 # Live Video
 
-> [Go live]()
+> [See Video]()
 
 # Built With:
 
