@@ -3,10 +3,10 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getDumeBook } from '../../Redux/Books/reducerBooks';
 import DuneBooks from '../duneBooks';
+import banner from '../../Assets/Images/banner.webp';
 
 export default function DuneBook() {
   const [filter, setFilter] = useState('');
-
   const dispatch = useDispatch();
   const books = useSelector((state) => state.books);
   useEffect(() => {
@@ -27,8 +27,12 @@ export default function DuneBook() {
           onChange={(e) => setFilter(e.target.value)}
         />
       </div>
+      <div className="Banner">
+        <img src={banner} alt="Banner SectionImage" />
+        <h1 className="banner-title">Bob&apos;s Burgers</h1>
+      </div>
       <section>
-        {filterBook && filter === '' && (
+        {filterBook !== [] && filter === '' && (
           books.map((book) => (
             <DuneBooks key={book.id} books={book} />
           ))
@@ -38,7 +42,7 @@ export default function DuneBook() {
             <DuneBooks key={book.id} books={book} />
           ))
         )}
-        {filterBook === [] && filter !== '' && (<div> Filter Not Match!!!</div>)}
+        {filterBook === [] && filter === '' && (<div> Filter Not Match!!!</div>)}
       </section>
     </>
   );
