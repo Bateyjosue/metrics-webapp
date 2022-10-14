@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { getDumeBook } from '../../Redux/Books/reducerBooks';
-// import DuneBooks from '../duneBooks';
 import banner from '../../Assets/Images/banner.webp';
 
 export default function DuneBook() {
@@ -38,7 +37,6 @@ export default function DuneBook() {
       <section>
         {filterBook !== [] && filter === '' && (
           books.map((book) => (
-            // <DuneBooks key={book.id} books={book} />
             <article key={book.id}>
               <div className="card-image">
                 <img src={book.image} alt="" width={80} />
@@ -57,7 +55,6 @@ export default function DuneBook() {
         )}
         {filterBook && filter !== '' && (
           filterBook.map((book) => (
-            // <DuneBooks key={book.id} books={book} />
             <article key={book.id}>
               <div className="card-image">
                 <img src={book.image} alt="" width={80} />

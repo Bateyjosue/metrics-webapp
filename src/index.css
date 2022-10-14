@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family:
@@ -23,7 +24,7 @@ body {
 
 :root {
   --primary-color: #3e699bf3;
-  --secondary-color:#357ac8d0;
+  --secondary-color: #357ac8d0;
   --primary-white: #fff;
   --primary-gray: rgba(85, 83, 83, 0.592);
 }
