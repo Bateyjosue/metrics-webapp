@@ -1,0 +1,250 @@
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  height: 3rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--primary-color);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  color: var(--primary-white);
+}
+
+header span.material-symbols-outlined {
+  color: var(--primary-white);
+  margin-right: 1rem;
+}
+
+.search {
+  position: absolute;
+  top: 0.7rem;
+  right: 1rem;
+}
+
+.search input {
+  border: none;
+  outline: none;
+  height: 1.5rem;
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+}
+
+.search span.material-symbols-outlined {
+  position: absolute;
+  top: 0.14rem;
+  right: 0.15rem;
+  font-size: 1rem;
+  background: var(--primary-gray);
+  border-radius: 1rem;
+  padding: 0.1rem;
+  color: #ddd;
+}
+
+header img {
+  height: 1.8rem;
+}
+
+.Banner {
+  height: 160px;
+  width: 100%;
+  position: relative;
+}
+
+.Banner .banner-title {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-white);
+  text-shadow: 5px 5px 5px var(--secondary-color);
+}
+
+.Banner img {
+  height: inherit;
+  width: inherit;
+}
+
+section {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--primary-white);
+}
+
+section article {
+  background: var(--primary-color);
+  border: 0.5px solid #ddd;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card-image span.material-symbols-outlined {
+  position: absolute;
+  right: 1rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-top: 1rem;
+  align-self: flex-end;
+}
+
+.card-image {
+  flex: 1;
+}
+
+.card-body p {
+  opacity: 0.7;
+}
+
+.single-book__details article {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 1rem;
+  text-align: center;
+  background: var(--secondary-color);
+  color: var(--primary-white);
+}
+
+.single-book__details .card-img__single img {
+  border-radius: 50%;
+  box-shadow: 1px 20px 50px var(--primary-white);
+}
+
+.single-book__details .card-body__single {
+  line-height: 2.5rem;
+  margin-top: 2rem;
+}
+
+.single-book__details .card-body__single h2 {
+  background: var(--primary-gray);
+  padding: 0.3rem 0;
+}
+
+.single-book__details .card-body__single p a {
+  background: var(--primary-gray);
+  padding: 0.3rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--primary-white);
+}
+
+footer {
+  height: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-color);
+  color: var(--primary-white);
+  font: 0.8em sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    height: 5rem;
+    font-size: 2rem;
+  }
+
+  .search {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .search input {
+    height: 2rem;
+    padding: 0 1.5rem;
+    border-radius: 1rem;
+  }
+
+  .search span.material-symbols-outlined {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    font-size: 1rem;
+    background: var(--primary-gray);
+    border-radius: 1rem;
+    padding: 0.3rem;
+    color: #ddd;
+  }
+
+  .Banner {
+    height: 490px;
+    width: 100%;
+  }
+
+  .Banner .banner-title {
+    top: 8rem;
+    font-size: 7rem;
+    color: var(--primary-white);
+    text-shadow: 10px 20px 6px var(--primary-gray);
+  }
+
+  .Banner img {
+    height: inherit;
+    width: inherit;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 2rem;
+    gap: 2rem;
+  }
+
+  section article {
+    height: 300px;
+    border-radius: 1rem;
+  }
+
+  .card-image img {
+    height: 200px;
+    width: auto;
+  }
+
+  .single-book__details {
+    padding: 0;
+  }
+
+  .single-book__details article {
+    width: 50%;
+    height: 80vh;
+  }
+
+  .single-book__details .card-body__single {
+    line-height: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  footer {
+    height: 70px;
+    font-size: 1.2rem;
+  }
+
+  section article:nth-child(even) {
+    background-color: #3e699bc8;
+  }
+}
