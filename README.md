@@ -1,12 +1,11 @@
-
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # #metrics-webapp
 
 > It's a mobile web application to display the list of characters for the Bob's Gurger Anime show. Fetcher from the Bob's Burger API and Built using Reactjs, Redux, HTML/CSS, Axios
 
-
 # Sreenshot
+
 ![](https://github.com/Bateyjosue/metrics-webapp/blob/dev/mockup.png)
 
 # Live Demo
@@ -59,14 +58,14 @@
 - Twitter: [@JosueBatey](https://twitter.com/josuebatey)
 - LinkedIn: [Josue (Josh) Batey](https://www.linkedin.com/in/josue-ishara/)
 
-
 # Acknowledgement
 
-Shout out to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
+I would like to thank [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) the [author of the original design](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>). The design was utilized in accordance with the [Creative Commons License](https://creativecommons.org/licenses/).
 
 # Show your support
 
 Give a ⭐️ if you like this project!
+
 # 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!

@@ -94,6 +94,7 @@ section article {
   position: relative;
 }
 
+
 .card-image span.material-symbols-outlined {
   position: absolute;
   right: 1rem;
@@ -211,7 +212,7 @@ footer {
   section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 2rem 4rem;
+    padding: 2rem 2rem;
     gap: 2rem;
   }
 
@@ -226,7 +227,7 @@ footer {
   }
 
   .single-book__details {
-    padding: 2rem;
+    padding: 0rem;
   }
 
   .single-book__details article {
@@ -235,12 +236,16 @@ footer {
   }
 
   .single-book__details .card-body__single {
-    line-height: 2rem;
+    line-height: 1.5rem;
     margin-top: 2rem;
   }
 
   footer {
     height: 70px;
     font-size: 1.2rem;
+  }
+
+  section article:nth-child(even) {
+    background-color:#3e699bc8;
   }
 }
